@@ -1,0 +1,19 @@
+table{
+    background-color: black;
+    width: 90%;
+    min-height: 520px;
+    margin-bottom: 45px;
+    margin-top: 45px;
+}
+
+td{
+    text-align: center;
+}
+
+.te{
+    width: 30px;
+}
+#table_SP .tong{
+    background-color: black;
+  
+}

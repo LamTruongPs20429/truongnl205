@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noidung">
+        <div class="container">
+            <img src="img/trang dau.jpg" alt="" width="1060px" height="80px">
+               <div class="menu">            
+                        <a href="trangchu.html">Trang chủ </a>
+                        <a href="">Tin mới & Ưu đãi </a>
+                        <a href="sanpham.html">Vé của tôi </a>
+                        <a href="dangky.html">Đăng Ký </a>
+            </div> 
+        </div>
+        <header>
+        <div class="noidung1">
+            <img src="./img/0.jpg"id="anh" width="100%"  alt="">
+            <div class="btn_container">
+                <button class="prev" onclick="prev()"><</button>
+                <button class="next" onclick="next()">></button>
+                <p class="so" id="so">1/5</p>
+            </div>
+            <script>
+                var images = [];
+                var index = 0;
+                var sohinh = 5;
+                var stt = 0;
+                for(var i = 0; i<sohinh; i++){
+                    images[i] = new Image();
+                    images[i].src = "img/" + i + ".jpg";
+                }
+                function next(){
+                    stt++;
+                    if (stt >= images.length) stt = 0;
+                    index++;
+                    if(index >= images.length) index = 0;
+                    var anh = document.getElementById("anh");
+                    anh.src = images[index].src;
+                    document.getElementById("so").innerHTML = Number(stt + 1) + "/" + images.length;
+                }
+                function prev(){
+                    stt++;
+                    if (stt >= images.length) stt = 0;
+                    index--;
+                    if(index >= images.length - 1);
+                    var anh = document.getElementById("anh");
+                    anh.src = images[index].src;
+                    document.getElementById("so").innerHTML = Number(stt + 1) + "/" + images.length;
+                }
+                window.setInterval(function() {
+                    next().onclick();}, 3000);           
+            </script> 
+    </header>
+    <nav>
+        <hr><h1>Phim đang chiếu</h1> <hr>
+
+        <div class="product" >  
+            <img src="img/p1.jpg" alt="" height="310px">           
+            <p class="ten">Phi công siêu đẳng Maverick</p>
+            <p>Thể loại: Hành Động, Phiêu Lưu</p>
+            <p>Thời lượng: 130 phút</p>
+            <p>Khởi chiếu: 27-05-2022</p>
+        
+        </div>
+
+        <div class="product">
+            <img src="img/p2.jpg" alt="" height="310px">
+            <p class="ten">Đa vũ trụ hỗn loạn</p>
+            <p>Thể loại: Hành Động, Phiêu Lưu, Thần thoại</p>
+            <p>Thời lượng: 126 phút</p>
+            <p>Khởi chiếu: 04-05-2022</p>
+        </div>
+        
+        <div class="product">
+            <img src="img/p10.jpg" alt="" height="310px" >
+            <p class="ten">Kể thứ 3 </p>
+            <p>Thể loại: Tâm lí, tình cảm , xã hội</p>
+            <p>Thời lượng: 87 phút</p> 
+            <p>Khởi chiếu: 13-05-2022</p>
+        </div>
+        
+        <div class="product">
+            <img src="img/p4.jpg" alt="" >
+            <p class="ten">Harry potter hòn đá phù thủy</p>
+            <p>Thể loại: Phiêu Lưu,Thần thoại</p>
+            <p>Thời lượng: 152 phút</p>
+            <p>Khởi chiếu: 20-05-2022</p>
+        </div>
+        <div class="product">
+        <img src="img/p5.jpg" alt="">
+            <p class="ten">578 phát đạn của kẻ điên</p>
+            <p>Thể loại: Hành động</p>
+            <p>Thời lượng: 106 phút</p>
+            <p>Khởi chiếu: 20-05-2022</p>
+        </div>
+        <div class="product">
+            <img src="img/p6.jpg" alt="">
+            <p class="ten">Nghề siêu dễ</p>
+            <p>Thể loại: Hành Động</p>
+            <p>Thời lượng: 113 phút</p>
+            <p>Khởi chiếu: 29-04-2022</p>
+        </div>
+        
+        <div class="product">
+            <img src="img/p7.jpg" alt="" height="293px">
+            <p class="ten">Bản tin chết</p>
+            <p>Thể loại: Kinh dị, tâm lí </p>
+            <p>Thời lượng: 111 phút</p>
+            <p>Khởi chiếu: 20-05-2022</p>
+        </div>
+        
+        <div class="product">
+            <img src="img/p8.jpg" alt="">
+            <p class="ten">Mồi cá mập</p>
+            <p>Thể loại: Hành Động, Kinh Dị</p>
+            <p>Thời lượng: 85 phút</p>
+            <p>Khởi chiếu: 20-05-2022</p>
+        </div>
+        
+    </nav>
+   
+        <footer>
+          
+         <hr>   <p>Sự Lựa Chọn Hoàn Hảo</p> <hr>
+            <br>
+            <div class="lienhe">
+                <h1>Tổng Đài</h1>
+                <p>Tư Vấn:1900 2009</p>
+                <p>CSKH:1900 0091</p>
+                <p>Khiếu Nại: 1900 ****</p>
+                <p>Bảo Hành:1900 1029</p>
+            </div>
+            <div class="gioithieu">
+                <h1>Giới Thiệu</h1>
+                <p>CTY TNHH 1 thành viên</p>
+                <p>Nguyễn Lâm Trường</p>
+                <p>PS20429</p>
+            </div>
+            <div class="diachi">
+                <h1>Địa Chỉ</h1>
+                <p>128 Trần Quang Khải</p>
+                <p>Phường Tân Định</p>
+                <p>Quận 1</p>
+                <p>TP.Hồ Chí Minh</p>
+            </div>       
+        </footer>
+
+    </div>
+</body>
+</html>

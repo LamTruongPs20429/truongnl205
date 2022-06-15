@@ -1,0 +1,25 @@
+#frm1  { 
+    width: 600px; margin: auto; 
+    border: 2px solid darkslategrey; 
+    padding: 10px;
+    background-color: rgb(234, 152, 194);
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  #frm1 >h1{
+    text-align: center;
+    
+  }
+  #frm1 > p { 
+    display: grid;
+    grid-template-columns: 120px auto;
+  }
+  #frm1 label { 
+    font-weight: 900;
+    color: darkslategray;
+  }
+  #frm1 .txt { 
+    width: 90%; padding: 8px; 
+    border: 1px solid lightcoral; 
+    vertical-align:middle;
+}

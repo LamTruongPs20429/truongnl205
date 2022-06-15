@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dangky.css">
+</head>
+<body>
+    <form id="frm1">
+        <h1>ĐĂNG KÍ THÀNH VIÊN</h1>
+        <p>
+          <label>Tên đăng nhập</label>
+          <input type="ten" class="txt" id="tendangnhap" name="tendangnhap" placeholder="Tên đăng nhập 6 đến 30 ký tự" autocomplete="off" autofocus>
+        </p>
+        <p>
+          <label>Mật khẩu</label>
+          <input type="password" class="txt" id="matkhau" name="matkhau" placeholder="Mật khẩu 6 đến 25 ký tự" autocomplete="new-password">
+        </p>
+        <p>
+          <label>Họ tên</label>
+          <input type="ten" class="txt" id="hoten" name="hoten" placeholder="Nhập họ & tên ">
+        </p>
+        <p>
+          <label>Email</label>
+          <input type="email" class="txt" id="email" name="email" placeholder="Nhập email: ...@gmail.com">
+        </p>
+        <p>
+          <label>Giới Tính</label>  
+          <span id="gioitinh">             
+              <input type="radio" name="phai" value="Nam">Nam
+              <input type="radio" name="phai" value="Nữ">Nữ<br>
+              <input type="radio" name="phai" value="Nữ">Khác<br>
+          </span>
+        </p> 
+        <p>
+          <label>Sở thích</label>
+          <span id="chonsothich">
+            <input type="checkbox" class="sothich" name="st[]">Nghe nhạc 
+            <input type="checkbox" class="sothich" name="st[]">Đá Bóng
+            <input type="checkbox" class="sothich" name="st[]">Chơi Game
+            <input type="checkbox" class="sothich" name="st[]">Khác
+           </span>
+        </p>
+        <p>
+          <label>Quốc Tịch</label>    
+          <select name="quoctich" id="quoctich" class="txt">
+            <option value="0">Quốc Tịch </option>
+            <option value="2">Việt Nam </option>
+            <option value="3">Hoa Kì</option>
+            <option value="4">Nga </option>
+            <option value="5">Trung Quốc </option>
+            <option value="6">Lào </option>
+            <option value="7">Pháp </option>
+          </select>
+        </p>
+        <p>
+          <label>Ghi Chú </label>
+          <textarea class="txt" id="gioithieu" name="gioithieu" rows="6" placeholder="Ghi Chú"></textarea>
+        </p>   
+        <p>
+        <button>Đăng ký</button>  
+        </p>
+      </form>
+</body>
+</html>
